@@ -15,7 +15,8 @@ export const Header = () => {
   return (
     <div className="container">
       <Link to="/">
-        <h1>Список дел</h1>
+        <img src="/src/assets/react.svg" alt="" />
+        <h1>Todo</h1>
       </Link>
 
       {token && (

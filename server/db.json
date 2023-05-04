@@ -3,32 +3,27 @@
     {
       "email": "log@gmail.com",
       "password": "$2a$10$8kUgRJXwXR9TEPUAEdMCqekQ8C8CJ5/gSc1jQrU7t/Ou.ceFUG.wK",
-      "todos": [
-        {
-          "id": 1,
-          "title": "task 1",
-          "completed": false
-        }
-      ],
       "id": 1
     },
     {
       "email": "mklhdv@gmail.com",
       "password": "$2a$10$MjvHyalfySEckwJagfrEfODd3s1x88lXkPwRLahWhnM5sxzFMNfa2",
-      "todos": [
-        {
-          "id": 1,
-          "title": "task",
-          "completed": false
-        },
-
-        {
-          "id": 2,
-          "title": "hello",
-          "completed": false
-        }
-      ],
       "id": 2
+    }
+  ],
+
+  "todos": [
+    {
+      "userId": 1,
+      "id": 1,
+      "title": "log",
+      "completed": false
+    },
+    {
+      "userId": 2,
+      "id": 2,
+      "title": "mklhdv",
+      "completed": false
     }
   ]
 }

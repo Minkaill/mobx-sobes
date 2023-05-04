@@ -1,17 +1,25 @@
 import axios from "axios";
 import { makeAutoObservable } from "mobx";
+import { ITodo } from "../types/ITodo";
+import { userData } from "../utils/helper";
+
+// Получения токена для запроса чтения списка дел
+const { token } = userData();
 
 class Todo {
-  tasks = [];
+  tasks: ITodo[] = [];
 
   constructor() {
     makeAutoObservable(this);
   }
 
-  async getTodo(userId: number) {
-    await axios
-      .get(`http://localhost:3002/users/${userId}`)
-      .then(({ data }) => (this.tasks = this.tasks = data.todos));
+  async getTodo() {
+    const { data } = await axios.get(`http://localhost:3002/660/todos`, {
+      headers: {
+        Authorization: `Bearer ` + `${token}`,
+      },
+    });
+    this.tasks = data;
   }
 
   addTodo() {}
