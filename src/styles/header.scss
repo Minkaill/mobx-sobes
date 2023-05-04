@@ -1,0 +1,24 @@
+.container {
+  max-width: 900px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+
+  h1 {
+    font-weight: 100;
+  }
+
+  &__logout {
+    display: flex;
+    align-items: center;
+
+    svg {
+      font-size: 26px;
+      margin-left: 15px;
+      cursor: pointer;
+    }
+  }
+}
