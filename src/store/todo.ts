@@ -16,13 +16,18 @@ class Todo {
   async getTodo() {
     const { data } = await axios.get(`http://localhost:3002/660/todos`, {
       headers: {
-        Authorization: `Bearer ` + `${token}`,
+        Authorization: `Bearer ${token}`,
       },
     });
     this.tasks = data;
   }
 
-  addTodo() {}
+  async addTodo(todo: ITodo) {
+    const config = {
+      headers: { Authorization: `Bearer ${token}` },
+    };
+    await axios.post("http://localhost:3002/660/todos", todo, config);
+  }
 
   removeTodo() {}
 
