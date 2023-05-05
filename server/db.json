@@ -13,15 +13,9 @@
   ],
   "todos": [
     {
-      "userId": 2,
-      "id": 1683261620662,
-      "title": "Task 1",
-      "completed": false
-    },
-    {
-      "userId": 2,
-      "id": 1683261625462,
-      "title": "Task 2",
+      "userId": 1,
+      "id": 1683266594707,
+      "title": "awdawd",
       "completed": false
     }
   ]

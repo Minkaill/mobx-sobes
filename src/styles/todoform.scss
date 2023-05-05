@@ -6,8 +6,13 @@
   align-items: center;
   justify-content: space-between;
 
+  &__mobile-btn {
+    display: block;
+  }
+
   &__sort {
     display: flex;
+    position: relative;
     gap: 5px;
 
     button {
@@ -22,6 +27,18 @@
       border: none;
       border-radius: 5px;
     }
+  }
+
+  &__btns {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    margin-top: 40px;
+    padding: 12px 10px;
+    gap: 10px;
+    border-radius: 5px;
+    z-index: 10;
+    flex-direction: column;
   }
 
   &__btn {

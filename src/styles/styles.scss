@@ -24,6 +24,48 @@ main {
   margin: 30px auto;
 }
 
+@media (max-width: 950px) {
+  main {
+    max-width: 750px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 830px) {
+  main {
+    max-width: 650px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 730px) {
+  main {
+    max-width: 550px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    max-width: 500px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  main {
+    max-width: 400px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  main {
+    max-width: 350px;
+    width: 100%;
+  }
+}
+
 @import "form";
 @import "header";
 @import "todo";
