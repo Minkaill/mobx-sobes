@@ -11,12 +11,5 @@
       "id": 2
     }
   ],
-  "todos": [
-    {
-      "userId": 1,
-      "id": 1683266594707,
-      "title": "awdawd",
-      "completed": false
-    }
-  ]
+  "todos": []
 }
