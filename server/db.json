@@ -9,6 +9,12 @@
       "email": "mklhdv@gmail.com",
       "password": "$2a$10$MjvHyalfySEckwJagfrEfODd3s1x88lXkPwRLahWhnM5sxzFMNfa2",
       "id": 2
+    },
+    {
+      "email": "kkk@gmail.com",
+      "password": "$2a$10$tCWXXFGJf3XazsRZyvX2XO2.NcyktxcBRNx5IGn6kflBxU/b8leBe",
+      "todos": [],
+      "id": 3
     }
   ],
   "todos": []
