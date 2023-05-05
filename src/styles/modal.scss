@@ -24,7 +24,6 @@
   color: #aaa;
   float: right;
   font-size: 28px;
-  font-weight: bold;
   margin-top: -10px;
   margin-right: -10px;
   cursor: pointer;
@@ -42,7 +41,6 @@
 }
 
 .modal-body label {
-  font-weight: bold;
   display: block;
   margin-bottom: 5px;
 }
@@ -71,8 +69,4 @@
   border-radius: 5px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-}
-
-.modal-footer button:hover {
-  background-color: #3e8e41;
 }

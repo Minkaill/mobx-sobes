@@ -3,4 +3,30 @@
   justify-content: space-between;
   align-items: center;
   margin: 10px 0;
+
+  p {
+    transition-duration: 0.3s;
+  }
+
+  &__btn {
+    width: fit-content;
+    padding: 3px 7px;
+    height: 30px;
+    right: 15px;
+    font-size: 14px;
+    cursor: pointer;
+    color: white;
+    background-color: #00d8fe;
+    border: none;
+    border-radius: 5px;
+  }
+
+  &__function {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__checked {
+    cursor: pointer;
+  }
 }

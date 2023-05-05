@@ -31,7 +31,10 @@ export const AppTodoModal: React.FC<IModal> = ({
       completed: false,
     };
     setTodos([...todos, newTodo]);
-    todo.addTodo(newTodo).then(() => setShowModal((prev) => !prev));
+    todo
+      .addTodo(newTodo)
+      .then(() => setShowModal((prev) => !prev))
+      .then(() => setValue(""));
   };
 
   return (
@@ -60,7 +63,9 @@ export const AppTodoModal: React.FC<IModal> = ({
               <button onClick={() => setShowModal((prev) => !prev)}>
                 Закрыть
               </button>
-              <button onClick={() => handleAddTodo()}>Добавить</button>
+              <button type="submit" onClick={() => handleAddTodo()}>
+                Добавить
+              </button>
             </div>
           </div>
         </div>

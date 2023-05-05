@@ -13,7 +13,6 @@ export const TodoList = () => {
   const [todos, setTodos] = React.useState<ITodo[]>([]);
   const [showModal, setShowModal] = React.useState<boolean>(false);
   const [value, setValue] = React.useState<string>("");
-  console.log(showModal);
 
   const tasks = todos.filter((item) => item.userId === userId);
 
@@ -23,7 +22,7 @@ export const TodoList = () => {
 
   return (
     <>
-      <TodoForm setShowModal={setShowModal} />
+      <TodoForm todos={tasks} setTodos={setTodos} setShowModal={setShowModal} />
       <AppTodoModal
         setShowModal={setShowModal}
         showModal={showModal}
@@ -35,7 +34,7 @@ export const TodoList = () => {
       <div className="todo-block">
         {tasks.map((item) => (
           <React.Fragment key={item.id}>
-            <Todo id={item.id} title={item.title} completed={item.completed} />
+            <Todo todos={tasks} setTodos={setTodos} id={item.id} title={item.title} completed={item.completed} />
           </React.Fragment>
         ))}
       </div>
